@@ -10,7 +10,6 @@ def send_mail():
     mail_msg = 'Subject: {0}\n\n{1}'.format(mail_sub, log_msg)
     smtpServ = smtplib.SMTP(mail_srv, mail_port)
     smtpServ.sendmail(mail_name, mail_recip, mail_msg)
-    log_file.close()
     smtpServ.quit()
     
 if __name__ == '__main__':
