@@ -14,4 +14,4 @@ def send_mail():
     smtpServ.quit()
     
 if __name__ == '__main__':
-    send_email()
+    send_mail()
